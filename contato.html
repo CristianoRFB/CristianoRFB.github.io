@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-modern-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(120deg, #181818 60%, var(--primary-color) 100%);
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 24px rgba(231,76,60,0.10);
+            margin-bottom: 40px;
+        }
+        .contact-modern-photo {
+            flex: 0 0 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-modern-photo img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            box-shadow: 0 0 18px var(--accent-color);
+            object-fit: cover;
+        }
+        .contact-modern-info {
+            flex: 1 1 320px;
+            min-width: 260px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-modern-info h2 {
+            color: var(--accent-color);
+            margin-bottom: 6px;
+            font-size: 1.7rem;
+        }
+        .contact-modern-info p {
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+        .contact-modern-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        .contact-modern-list li {
+            margin-bottom: 8px;
+            font-size: 1.08rem;
+        }
+        .contact-modern-list li strong {
+            color: var(--primary-color);
+        }
+        .contact-modern-list li a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        .contact-modern-list li a:hover {
+            text-decoration: underline;
+            color: var(--primary-color);
+        }
+        .contact-modern-social {
+            margin-top: 18px;
+            display: flex;
+            gap: 18px;
+        }
+        .contact-modern-social a {
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--text-color);
+            background: var(--primary-color);
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 2px 5px rgba(231,76,60,0.15);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .contact-modern-social a:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        .contact-modern-social .linkedin-btn {
+            background: #e74c3c;
+        }
+        .contact-modern-social .github-btn {
+            background: #333;
+        }
+        .contact-modern-social .linkedin-btn:hover,
+        .contact-modern-social .github-btn:hover {
+            background: var(--accent-color);
+        }
+        @media (max-width: 900px) {
+            .contact-modern-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+            .contact-modern-info {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">Meu Portfólio</a>
+            <ul class="nav-list">
+                <li><a href="disciplinas.html">Disciplinas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://github.com/cristianorfb" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section>
+            <h1 style="text-align:center;margin-bottom:32px;">Fale comigo</h1>
+            <div class="contact-modern-container">
+                <div class="contact-modern-photo">
+                    <img src="assets/images/foto.jpg" alt="Foto de Cristiano Ronaldo Ferreira Bueno">
+                </div>
+                <div class="contact-modern-info">
+                    <h2>Cristiano Ronaldo Ferreira Bueno</h2>
+                    <p>Estou sempre aberto a novas ideias, parcerias e oportunidades. Se quiser conversar sobre tecnologia, projetos, carreira ou simplesmente trocar experiências, entre em contato pelos canais abaixo:</p>
+                    <ul class="contact-modern-list">
+                        <li><strong>E-mail:</strong> <a href="mailto:cristiano.bueno01@fatec.sp.gov.br">cristiano.bueno01@fatec.sp.gov.br</a></li>
+                        <li><strong>Telefone:</strong> (17) 99654-3360</li>
+                        <li><strong>Localização:</strong> Rubinéia - SP</li>
+                    </ul>
+                    <div class="contact-modern-social">
+                        
+                        <a href="https://github.com/cristianorfb" target="_blank" class="github-btn">
+                            <img src="https://img.icons8.com/ios-filled/24/ffffff/github.png" alt="GitHub" style="width:20px;height:20px;">GitHub
+                        </a>
+                        <a href="https://br.linkedin.com/in/cristiano-ronaldo-ferreira-bueno" target="_blank" class="linkedin-btn">
+                            <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn" style="width:20px;height:20px;">LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Cristiano Ronaldo Ferreira Bueno. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

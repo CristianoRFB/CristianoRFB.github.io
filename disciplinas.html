@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disciplinas - Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .discipline-modern-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+
+        .discipline-modern-card {
+            background: var(--card-bg);
+            border-radius: 14px;
+            box-shadow: 0 2px 16px rgba(231, 76, 60, 0.10);
+            padding: 32px 24px;
+            border-left: 6px solid var(--primary-color);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: border 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .discipline-modern-card:hover {
+            border-left: 6px solid var(--accent-color);
+            transform: translateY(-6px) scale(1.03);
+        }
+
+        .discipline-modern-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 6px;
+        }
+
+        .discipline-modern-card p {
+            color: var(--text-color);
+            margin-bottom: 0;
+        }
+
+        .discipline-modern-card .professor {
+            font-size: 1rem;
+            color: var(--primary-color);
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+            .discipline-modern-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">Meu Portfólio</a>
+            <ul class="nav-list">
+                <li><a href="disciplinas.html">Disciplinas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://github.com/cristianorfb" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="disciplines-overview">
+            <h1>Disciplinas Cursadas</h1>
+            <p>Selecione uma disciplina para ver detalhes, curiosidades e materiais de apoio.</p>
+            <input type="text" id="searchDiscipline" placeholder="Buscar disciplina..."
+                style="margin:20px auto 30px auto;display:block;max-width:350px;width:100%;padding:10px;border-radius:5px;border:1px solid var(--primary-color);background:#111;color:#fff;">
+        </section>
+
+        <section>
+                <a href="disciplinas/alu21.html" class="discipline-modern-card">
+                    <h3>Projeto Integrador</h3>
+                    <span class="professor">Prof. Jefferson Antonio Ribeiro Passerini</span>
+                    <p>Aplicação prática dos conhecimentos do curso em projetos reais e colaborativos.</p>
+                </a>
+                <a href="disciplinas/idd034.html" class="discipline-modern-card">
+                    <h3>Técnicas Avançadas de Banco de Dados</h3>
+                    <span class="professor">Prof. Alexandre Aparecido Bernardes</span>
+                    <p>Exploração de bancos relacionais e NoSQL, otimização e segurança de dados.</p>
+                </a>
+                <a href="disciplinas/ies008.html" class="discipline-modern-card">
+                    <h3>Estruturas de Dados</h3>
+                    <span class="professor">Prof. Willian Guimarães Borges</span>
+                    <p>Organização e manipulação eficiente de dados com listas, filas, pilhas e árvores.</p>
+                </a>
+                <a href="disciplinas/ies020.html" class="discipline-modern-card">
+                    <h3>Engenharia de Software</h3>
+                    <span class="professor">Prof. Jefferson Antonio Ribeiro Passerini</span>
+                    <p>Estudo de processos, modelagem, requisitos e metodologias para desenvolvimento de sistemas.</p>
+                </a>
+                <a href="disciplinas/idd063.html" class="discipline-modern-card">
+                    <h3>Técnicas Avançadas de Programação</h3>
+                    <span class="professor">Prof. Wellington Luis Codinhoto Garcia</span>
+                    <p>Desenvolvimento avançado em C# e .NET, integração com bancos e frameworks modernos.</p>
+                </a>
+                <a href="disciplinas/ind053.html" class="discipline-modern-card">
+                    <h3>Programação Web e Mobile</h3>
+                    <span class="professor">Prof. Marcelo Tadeu Boer</span>
+                    <p>Criação de aplicações web/mobile com React.js, Firebase e boas práticas de UI/UX.</p>
+                </a>
+                
+                <a href="disciplinas/ihc008.html" class="discipline-modern-card">
+                    <h3>Interação Humano Computador</h3>
+                    <span class="professor">Prof. Lígia Rodrigues Prete</span>
+                    <p>Design de interfaces, usabilidade, acessibilidade e experiência do usuário.</p>
+                </a>
+                <a href="disciplinas/ine003.html" class="discipline-modern-card">
+                    <h3>Inteligência Corporativa e Modelos de Negócios</h3>
+                    <span class="professor">Prof. Marinalva da Silva Talpo Boldrin</span>
+                    <p>Estratégias de BI, inovação e transformação digital em organizações.</p>
+                </a>
+                <a href="disciplinas/ine004.html" class="discipline-modern-card">
+                    <h3>Gestão Ágil de Projetos de Software</h3>
+                    <span class="professor">Prof. André Zagato Gomes</span>
+                    <p>Metodologias ágeis, Scrum, XP e práticas para equipes de desenvolvimento modernas.</p>
+                </a>
+                <a href="disciplinas/iso116.html" class="discipline-modern-card">
+                    <h3>Organização de Computadores e Sistemas Operacionais</h3>
+                    <span class="professor">Prof. Wellington Luis Codinhoto Garcia</span>
+                    <p>Arquitetura de computadores, funcionamento de sistemas operacionais e hardware.</p>
+                </a>
+                <a href="disciplinas/mat026.html" class="discipline-modern-card">
+                    <h3>Matemática Discreta</h3>
+                    <span class="professor">Prof. Evaniváldo Castro Suiva Júnior</span>
+                    <p>Lógica, conjuntos, grafos e combinatória aplicados à computação.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Cristiano Ronaldo Ferreira Bueno. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script de busca simples -->
+    <script>
+        const searchInput = document.getElementById('searchDiscipline');
+        const grid = document.getElementById('disciplineGrid');
+        const cards = Array.from(grid.getElementsByClassName('discipline-modern-card'));
+
+        searchInput.addEventListener('input', function () {
+            const value = this.value.toLowerCase();
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(value) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
