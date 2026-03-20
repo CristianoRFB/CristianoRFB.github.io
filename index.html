@@ -4,258 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Acadêmico</title>
+    <meta name="description"
+        content="Portfólio de Cristiano Ronaldo Ferreira Bueno, estudante de ADS na Fatec Jales com foco em desenvolvimento, dados e projetos reais.">
+    <title>Cristiano Bueno | Portfólio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Modern hero overlay */
-        .hero-modern {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            background: linear-gradient(120deg, #181818 60%, var(--primary-color) 100%);
-            border-radius: 16px;
-            padding: 40px 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 24px rgba(231, 76, 60, 0.10);
-        }
-
-        .hero-modern .hero-text {
-            flex: 1 1 350px;
-            min-width: 300px;
-            text-align: left;
-            /* Centraliza apenas em telas grandes */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-        }
-
-        .hero-modern .hero-photo {
-            flex: 0 0 190px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-modern .profile-photo {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            border: 4px solid var(--primary-color);
-            box-shadow: 0 0 18px var(--accent-color);
-            object-fit: cover;
-        }
-
-        .quick-links {
-            display: flex;
-            gap: 18px;
-            margin-top: 22px;
-        }
-
-        .quick-links a {
-            background: var(--primary-color);
-            color: var(--text-color);
-            padding: 10px 22px;
-            border-radius: 6px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-
-        .quick-links a:hover {
-            background: var(--accent-color);
-        }
-
-        /* Modern cards */
-        .modern-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 32px;
-            margin: 0 0 40px 0;
-        }
-
-        .modern-card {
-            background: var(--card-bg);
-            border-radius: 14px;
-            box-shadow: 0 2px 16px rgba(231, 76, 60, 0.10);
-            padding: 32px 24px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 2px solid transparent;
-            transition: border 0.3s, transform 0.2s;
-        }
-
-        .modern-card:hover {
-            border: 2px solid var(--primary-color);
-            transform: translateY(-6px) scale(1.03);
-        }
-
-        .modern-card img {
-            width: 64px;
-            margin-bottom: 18px;
-        }
-
-        .modern-card h3 {
-            color: var(--accent-color);
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-
-        .modern-card p {
-            color: var(--text-color);
-            text-align: center;
-        }
-
-        /* Projetos */
-        .projects-section {
-            margin-top: 40px;
-        }
-
-        .project-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 28px;
-            justify-content: center;
-        }
-
-        .project-card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(231, 76, 60, 0.10);
-            padding: 24px 20px;
-            min-width: 260px;
-            max-width: 340px;
-            flex: 1 1 260px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            border-left: 5px solid var(--primary-color);
-            transition: border 0.3s, transform 0.2s;
-        }
-
-        .project-card:hover {
-            border-left: 5px solid var(--accent-color);
-            transform: translateY(-4px) scale(1.02);
-        }
-
-        .project-card h4 {
-            color: var(--accent-color);
-            margin-bottom: 8px;
-        }
-
-        .project-card p {
-            margin-bottom: 12px;
-        }
-
-        @media (max-width: 900px) {
-            .hero-modern {
-                flex-direction: column;
-                text-align: center;
-                gap: 30px;
-            }
-
-            .hero-modern .hero-text {
-                text-align: center;
-                /* Centraliza em telas pequenas */
-                align-items: center;
-            }
-
-            .hero-modern .hero-photo {
-                justify-content: center;
-            }
-
-            .modern-cards,
-            .project-list {
-                grid-template-columns: 1fr;
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="index.html" class="nav-brand">Meu Portfólio</a>
+            <a href="index.html" class="nav-brand">Cristiano <span>Bueno</span></a>
+            <ul class="nav-list">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="disciplinas.html">Disciplinas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="https://github.com/cristianorfb" target="_blank" rel="noreferrer">GitHub</a></li>
+            </ul>
         </nav>
     </header>
 
     <main class="main-content">
-        <!-- HERO MODERNO -->
-        <section class="hero-modern">
-            <div class="hero-photo">
-                <img src="assets/images/foto.jpg" alt="Foto de Cristiano Ronaldo Ferreira Bueno" class="profile-photo">
-            </div>
-            <div class="hero-text">
-                <h1>Eu sou Cristiano Ronaldo Ferreira Bueno</h1>
-                <p>Sou estudante de Análise e Desenvolvimento de Sistemas na Fatec Jales, apaixonado por tecnologia,
-                    inovação e soluções criativas. Aqui você encontra minha trajetória acadêmica, projetos, experiências
-                    e aprendizados.</p>
-                <div class="quick-links">
-                    <a href="disciplinas.html">Disciplinas</a>
-                    <a href="contato.html">Contato</a>
-                    <a href="https://github.com/cristianorfb" target="_blank">GitHub</a>
+        <section class="hero section">
+            <div class="hero-copy reveal">
+                <span class="eyebrow">Portfólio acadêmico + profissional</span>
+                <h1>Transformando estudos em soluções digitais com identidade, clareza e impacto.</h1>
+                <p class="hero-lead">
+                    Sou Cristiano Ronaldo Ferreira Bueno, estudante de Análise e Desenvolvimento de Sistemas na Fatec Jales.
+                    Este site agora apresenta minha trajetória de forma mais estratégica: competências, projetos, disciplinas e
+                    canais de contato reunidos em uma experiência mais moderna, confiante e fácil de navegar.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn">Ver projetos em destaque</a>
+                    <a href="contato.html" class="btn-secondary">Conversar comigo</a>
+                    <a href="disciplinas.html" class="btn-ghost">Explorar disciplinas</a>
                 </div>
+            </div>
+
+            <aside class="hero-panel reveal delay-1">
+                <div class="profile-wrapper">
+                    <img src="assets/images/foto.jpg" alt="Foto de Cristiano Ronaldo Ferreira Bueno" class="profile-photo">
+                    <div class="profile-meta">
+                        <h2>Cristiano Ronaldo Ferreira Bueno</h2>
+                        <p>ADS • Fatec Jales</p>
+                        <p>Foco em desenvolvimento full stack, banco de dados e experiências web.</p>
+                    </div>
+                </div>
+
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <strong>11+</strong>
+                        <span>disciplinas aplicadas ao portfólio</span>
+                    </div>
+                    <div class="metric-card">
+                        <strong>3</strong>
+                        <span>projetos públicos em destaque</span>
+                    </div>
+                    <div class="metric-card">
+                        <strong>100%</strong>
+                        <span>site estático, rápido e responsivo</span>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <a href="https://github.com/cristianorfb" target="_blank" rel="noreferrer" class="btn">GitHub</a>
+                    <a href="https://br.linkedin.com/in/cristiano-ronaldo-ferreira-bueno" target="_blank" rel="noreferrer"
+                        class="btn-ghost">LinkedIn</a>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section glass-card reveal delay-2">
+            <h2 class="section-title">O que este portfólio comunica melhor agora</h2>
+            <p class="section-subtitle">
+                A proposta deixou de ser apenas uma vitrine acadêmica e passou a funcionar como uma apresentação profissional,
+                destacando valor, contexto e direção de carreira.
+            </p>
+            <div class="highlights-grid">
+                <article class="info-card">
+                    <span class="tag">Posicionamento</span>
+                    <h3>Identidade mais forte</h3>
+                    <p>Uma abertura mais clara, com headline de impacto e navegação objetiva, ajuda recrutadores e parceiros a
+                        entenderem rapidamente quem você é e onde pode contribuir.</p>
+                </article>
+                <article class="info-card">
+                    <span class="tag">Experiência</span>
+                    <h3>Layout mais premium</h3>
+                    <p>O novo visual usa contraste, profundidade e hierarquia visual para entregar uma aparência muito mais atual
+                        sem perder desempenho por ser um site estático.</p>
+                </article>
+                <article class="info-card">
+                    <span class="tag">Clareza</span>
+                    <h3>Conteúdo orientado a resultado</h3>
+                    <p>Projetos, áreas de atuação e disciplinas passaram a reforçar competências práticas, não apenas listar itens.</p>
+                </article>
             </div>
         </section>
 
-        <!-- ÁREAS DE ATUAÇÃO EM CARDS MODERNOS -->
-        <section>
-            <h2 style="text-align:center;margin-bottom:28px;">Áreas de Atuação</h2>
-            <div class="modern-cards">
-                <a href="disciplinas/ies008.html" class="modern-card" style="text-decoration:none; color:inherit;">
-                    <img src="https://img.icons8.com/ios-filled/100/ff2d2d/source-code.png" alt="Código">
-                    <h3>Lógica & Programação</h3>
-                    <p>Criação de soluções com algoritmos, estruturas de dados e linguagens modernas.</p>
-                </a>
-                <a href="disciplinas/idd034.html" class="modern-card" style="text-decoration:none; color:inherit;">
-                    <img src="https://img.icons8.com/ios-filled/100/ff2d2d/database.png" alt="Banco de Dados">
-                    <h3>Banco de Dados</h3>
-                    <p>Modelagem, implementação e consulta de dados para aplicações robustas e seguras.</p>
-                </a>
-                <a href="disciplinas/iso116.html" class="modern-card" style="text-decoration:none; color:inherit;">
-                    <img src="https://img.icons8.com/ios-filled/100/ff2d2d/network.png" alt="Redes">
-                    <h3>Redes & Sistemas</h3>
-                    <p>Infraestrutura, protocolos e segurança para conectar o mundo digital.</p>
-                </a>
-                <a href="disciplinas/alu21.html" class="modern-card" style="text-decoration:none; color:inherit;">
-                    <img src="https://img.icons8.com/ios-filled/100/ff2d2d/project.png" alt="Projetos">
-                    <h3>Projetos Integradores</h3>
-                    <p>Aplicação prática do conhecimento em projetos reais, colaborativos e inovadores.</p>
-                </a>
+        <section class="section reveal delay-3">
+            <h2 class="section-title">Áreas em que estou construindo excelência</h2>
+            <p class="section-subtitle">
+                Minha formação combina base acadêmica, prática em desenvolvimento e interesse constante por produtos digitais
+                bem construídos.
+            </p>
+            <div class="highlights-grid">
+                <article class="info-card">
+                    <span class="tag">Desenvolvimento</span>
+                    <h3>Lógica, estrutura e código limpo</h3>
+                    <p>Construção de aplicações com atenção à organização de código, reaproveitamento, legibilidade e resolução de problemas.</p>
+                    <ul class="list-clean">
+                        <li>Algoritmos e estruturas de dados.</li>
+                        <li>Projetos com C#, .NET e web.</li>
+                        <li>Visão de front-end responsivo.</li>
+                    </ul>
+                </article>
+                <article class="info-card">
+                    <span class="tag">Dados</span>
+                    <h3>Modelagem e persistência</h3>
+                    <p>Interesse por bancos relacionais e práticas que tornam a informação útil, íntegra e pronta para apoiar decisões.</p>
+                    <ul class="list-clean">
+                        <li>Modelagem de dados.</li>
+                        <li>Consultas e organização.</li>
+                        <li>Integração com sistemas.</li>
+                    </ul>
+                </article>
+                <article class="info-card">
+                    <span class="tag">Produto</span>
+                    <h3>Visão de experiência e negócio</h3>
+                    <p>Além da programação, valorizo interfaces intuitivas, metodologias ágeis e a conexão entre tecnologia e valor real.</p>
+                    <ul class="list-clean">
+                        <li>UX e IHC.</li>
+                        <li>Agilidade e colaboração.</li>
+                        <li>Projetos com contexto de negócio.</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <!-- ÚLTIMOS PROJETOS EM CARDS HORIZONTAIS -->
-        <section class="projects-section">
-            <h2 style="text-align:center;margin-bottom:28px;">Últimos Projetos no GitHub</h2>
-            <div class="project-list">
-                <div class="project-card">
-                    <h4>Produto Fornecedor .NET</h4>
-                    <p>Projeto em .NET para gerenciamento de produtos e fornecedores.</p>
-                    <a href="https://github.com/CristianoRFB/ProdutoFornecedorDOTNET" target="_blank"
-                        class="btn btn-primary">Ver no GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h4>Projeto Ligia</h4>
-                    <p>Aplicação desenvolvida para estudos e práticas de programação.</p>
-                    <a href="https://github.com/CristianoRFB/ProjetoLigia" target="_blank" class="btn btn-primary">Ver
-                        no GitHub</a>
-                </div>
-                <div class="project-card">
-                    <h4>Projeto Boer</h4>
-                    <p>Repositório com Projetos desenvolvidos em técnicas de programação mobile</p>
-                    <a href="https://github.com/CristianoRFB/ProjetoBoer" target="_blank" class="btn btn-primary">Ver no
-                        GitHub</a>
-                </div>
+        <section class="section reveal delay-4" id="projetos">
+            <h2 class="section-title">Projetos em destaque</h2>
+            <p class="section-subtitle">
+                Alguns repositórios que representam minha evolução técnica, prática acadêmica e capacidade de transformar aprendizado em entrega concreta.
+            </p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="tag">Projeto .NET</span>
+                    <h3>Produto Fornecedor .NET</h3>
+                    <p>Aplicação voltada ao gerenciamento de produtos e fornecedores, com foco em organização de dados, regras de negócio e estruturação de sistema.</p>
+                    <div class="stack">
+                        <span class="pill">C#</span>
+                        <span class="pill">.NET</span>
+                        <span class="pill">Banco de dados</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/CristianoRFB/ProdutoFornecedorDOTNET" target="_blank" rel="noreferrer" class="btn">Abrir repositório</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <span class="tag">Estudo aplicado</span>
+                    <h3>Projeto Ligia</h3>
+                    <p>Repositório de práticas de programação utilizado para consolidar conceitos, testar abordagens e evoluir a capacidade de implementação.</p>
+                    <div class="stack">
+                        <span class="pill">Programação</span>
+                        <span class="pill">Aprendizado contínuo</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/CristianoRFB/ProjetoLigia" target="_blank" rel="noreferrer" class="btn">Abrir repositório</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <span class="tag">Web & mobile</span>
+                    <h3>Projeto Boer</h3>
+                    <p>Conjunto de projetos desenvolvidos em programação web e mobile, reforçando interface, interação e experimentação com tecnologias modernas.</p>
+                    <div class="stack">
+                        <span class="pill">Web</span>
+                        <span class="pill">Mobile</span>
+                        <span class="pill">UI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/CristianoRFB/ProjetoBoer" target="_blank" rel="noreferrer" class="btn">Abrir repositório</a>
+                    </div>
+                </article>
             </div>
+        </section>
+
+        <section class="cta-banner reveal">
+            <div>
+                <h2>Quer ver a base acadêmica por trás de tudo isso?</h2>
+                <p class="small-text">A página de disciplinas organiza os conteúdos que sustentam minhas decisões técnicas, do banco de dados à engenharia de software.</p>
+            </div>
+            <a href="disciplinas.html" class="btn-secondary">Explorar disciplinas</a>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Cristiano Ronaldo Ferreira Bueno. Todos os direitos reservados.</p>
+        <p><strong>Cristiano Ronaldo Ferreira Bueno</strong> • Portfólio acadêmico e profissional • 2026</p>
     </footer>
 </body>
 
