@@ -13,12 +13,29 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="nav-brand">Cristiano <span>Bueno</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="disciplinas.html">Disciplinas</a></li>
-                <li><a href="contato.html" class="active">Contato</a></li>
-                <li><a href="https://github.com/cristianorfb" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="disciplinas.html">Conhecimentos</a></li>
+                <li><a href="contato.html" class="active">Fale comigo</a></li>
             </ul>
+            <div class="nav-social" aria-label="Redes sociais">
+                <a href="https://github.com/CristianoRFB" target="_blank" rel="noreferrer" aria-label="GitHub" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.51 2.87 8.33 6.84 9.68.5.1.68-.22.68-.49 0-.24-.01-1.04-.02-1.89-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.06A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.49.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.77 0 3.98-2.34 4.85-4.57 5.11.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/cristiano-ronaldo-38022033b" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3A2.02 2.02 0 0 0 3.2 5.03 2 2 0 0 0 5.2 7.06h.03A2.02 2.02 0 0 0 7.3 5.03 2 2 0 0 0 5.28 3h-.03ZM21 13.24c0-3.37-1.8-4.94-4.2-4.94-1.94 0-2.8 1.08-3.28 1.84V8.5h-3.38c.04 1.08 0 12.5 0 12.5h3.38v-6.98c0-.37.03-.74.14-1 .3-.74.98-1.5 2.12-1.5 1.5 0 2.1 1.14 2.1 2.82V21H21v-7.76Z" />
+                    </svg>
+                </a>
+            </div>
         </nav>
     </header>
 
@@ -30,6 +47,23 @@
                 Se você procura alguém comprometido com evolução constante, boa comunicação e vontade real de construir soluções,
                 este é o melhor ponto de partida.
             </p>
+        </section>
+
+        <section class="section reveal">
+            <div class="signal-grid">
+                <article class="signal-card">
+                    <strong>Aberto a oportunidades</strong>
+                    <p>Especialmente estágios, experiências de entrada na área e projetos que acelerem crescimento técnico.</p>
+                </article>
+                <article class="signal-card">
+                    <strong>Boa conversa técnica</strong>
+                    <p>Também faz sentido me chamar para trocar ideias sobre desenvolvimento, dados, UX e carreira em tecnologia.</p>
+                </article>
+                <article class="signal-card">
+                    <strong>Resposta por canais diretos</strong>
+                    <p>E-mail, GitHub e LinkedIn ficam organizados para facilitar um contato rápido e objetivo.</p>
+                </article>
+            </div>
         </section>
 
         <section class="section contact-grid">
@@ -59,8 +93,26 @@
                 </p>
                 <div class="contact-actions contact-actions-spaced">
                     <a href="mailto:cristiano.bueno01@fatec.sp.gov.br" class="btn">Enviar e-mail</a>
-                    <a href="https://github.com/cristianorfb" target="_blank" rel="noreferrer" class="btn-ghost">GitHub</a>
-                    <a href="https://br.linkedin.com/in/cristiano-ronaldo-ferreira-bueno" target="_blank" rel="noreferrer" class="btn-secondary">LinkedIn</a>
+                    <a href="assets/docs/Cristiano-Bueno-Curriculo.pdf" class="btn-secondary" download>Baixar currículo</a>
+                    <a href="https://github.com/CristianoRFB" target="_blank" rel="noreferrer" class="btn-ghost">GitHub</a>
+                    <a href="https://linkedin.com/in/cristiano-ronaldo-38022033b" target="_blank" rel="noreferrer" class="btn-ghost">LinkedIn</a>
+                </div>
+                <p class="contact-note">
+                    Tenho interesse em experiências que combinem aprendizado acelerado, colaboração real e construção de software com propósito.
+                </p>
+                <div class="qr-grid qr-grid-compact">
+                    <article class="qr-card">
+                        <img src="assets/qrcodes/github.png" alt="QR code do GitHub de Cristiano Bueno" class="qr-image">
+                        <h3>GitHub</h3>
+                    </article>
+                    <article class="qr-card">
+                        <img src="assets/qrcodes/linkedin.png" alt="QR code do LinkedIn de Cristiano Bueno" class="qr-image">
+                        <h3>LinkedIn</h3>
+                    </article>
+                    <article class="qr-card">
+                        <img src="assets/qrcodes/email.png" alt="QR code do e-mail de Cristiano Bueno" class="qr-image">
+                        <h3>E-mail</h3>
+                    </article>
                 </div>
                 <div class="contact-feature-box">
                     <div class="timeline-grid">
@@ -82,6 +134,10 @@
     <footer class="footer">
         <p><strong>Cristiano Ronaldo Ferreira Bueno</strong> • Disponível para conexões profissionais • 2026</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
+
+
+

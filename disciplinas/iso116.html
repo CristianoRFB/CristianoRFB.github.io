@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organização de Computadores e Sistemas Operacionais - Meu Portfólio</title>
+    <title>Organização de Computadores e Sistemas Operacionais | Cristiano Bueno</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body> 
+<body>
     <header class="header">
         <nav class="navbar">
-            <a href="../index.html" class="nav-brand">Meu Portfólio</a>
+            <a href="../index.html" class="nav-brand">Cristiano <span>Bueno</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-list">
-                <li><a href="../disciplinas.html">Disciplinas</a></li>
-                <li><a href="../contato.html">Contato</a></li>
-                <li><a href="https://github.com/cristianorfb" target="_blank">GitHub</a></li>
+                <li><a href="../index.html">Sobre mim</a></li>
+                <li><a href="../index.html#projetos">Projetos</a></li>
+                <li><a href="../disciplinas.html" class="active">Conhecimentos</a></li>
+                <li><a href="../contato.html">Fale comigo</a></li>
             </ul>
+            <div class="nav-social" aria-label="Redes sociais">
+                <a href="https://github.com/CristianoRFB" target="_blank" rel="noreferrer" aria-label="GitHub" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.51 2.87 8.33 6.84 9.68.5.1.68-.22.68-.49 0-.24-.01-1.04-.02-1.89-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.06A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.49.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.77 0 3.98-2.34 4.85-4.57 5.11.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/cristiano-ronaldo-38022033b" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3A2.02 2.02 0 0 0 3.2 5.03 2 2 0 0 0 5.2 7.06h.03A2.02 2.02 0 0 0 7.3 5.03 2 2 0 0 0 5.28 3h-.03ZM21 13.24c0-3.37-1.8-4.94-4.2-4.94-1.94 0-2.8 1.08-3.28 1.84V8.5h-3.38c.04 1.08 0 12.5 0 12.5h3.38v-6.98c0-.37.03-.74.14-1 .3-.74.98-1.5 2.12-1.5 1.5 0 2.1 1.14 2.1 2.82V21H21v-7.76Z" />
+                    </svg>
+                </a>
+            </div>
         </nav>
     </header>
 
     <main class="main-content">
-        <section class="discipline-detail">
+        <section class="discipline-detail reveal">
+            <a href="../disciplinas.html" class="back-link">&larr; Voltar para disciplinas</a>
+            <span class="eyebrow detail-eyebrow">Disciplina em foco</span>
             <h1>Organização de Computadores e Sistemas Operacionais</h1>
             <p class="professor-name">Professor: Wellington Luis Codinhoto Garcia</p>
             
@@ -32,9 +52,9 @@
 
             <h2>Links Úteis</h2>
             <ul class="useful-links">
-                <li><a href="https://www.youtube.com/playlist?list=PLHz_eyp9xlQBP7-pQGg1_eWbT3w7X35qK" target="_blank">Curso de Hardware (Curso em Vídeo)</a></li>
-                <li><a href="https://www.geeksforgeeks.org/operating-systems/" target="_blank">GeeksforGeeks - Operating Systems</a></li>
-                <li><a href="https://www.intel.com/content/www/us/en/developer/articles/technical/processor-architecture.html" target="_blank">Intel Processor Architecture (Visão Geral)</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLHz_eyp9xlQBP7-pQGg1_eWbT3w7X35qK" target="_blank" rel="noreferrer">Curso de Hardware (Curso em Vídeo)</a></li>
+                <li><a href="https://www.geeksforgeeks.org/operating-systems/" target="_blank" rel="noreferrer">GeeksforGeeks - Operating Systems</a></li>
+                <li><a href="https://www.intel.com/content/www/us/en/developer/articles/technical/processor-architecture.html" target="_blank" rel="noreferrer">Intel Processor Architecture (Visão Geral)</a></li>
             </ul>
 
             <h2>Sobre a Matéria</h2>
@@ -69,11 +89,17 @@
                 <h3>Trabalho Prático sobre CPU</h3>
                 <p>Desenvolvimento de atividades para consolidar o conhecimento sobre a Unidade Central de Processamento.</p>
             </div>
+                    <p class="contact-note">Esta disciplina faz parte da base que sustenta meu portfólio acadêmico e profissional.</p>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Cristiano Ronaldo Ferreira Bueno. Todos os direitos reservados.</p>
+        <p><strong>Cristiano Ronaldo Ferreira Bueno</strong> • Disciplina em destaque • 2026</p>
     </footer>
+    <script src="../scripts.js"></script>
 </body>
 </html>
+
+
+
+

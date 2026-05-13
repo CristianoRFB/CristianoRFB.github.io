@@ -14,88 +14,160 @@
     <header class="header">
         <nav class="navbar">
             <a href="index.html" class="nav-brand">Cristiano <span>Bueno</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-list">
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="disciplinas.html">Disciplinas</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="https://github.com/cristianorfb" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><a href="index.html" class="active">Sobre mim</a></li>
+                <li><a href="index.html#projetos">Projetos</a></li>
+                <li><a href="disciplinas.html">Conhecimentos</a></li>
+                <li><a href="contato.html">Fale comigo</a></li>
             </ul>
+            <div class="nav-social" aria-label="Redes sociais">
+                <a href="https://github.com/CristianoRFB" target="_blank" rel="noreferrer" aria-label="GitHub" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.51 2.87 8.33 6.84 9.68.5.1.68-.22.68-.49 0-.24-.01-1.04-.02-1.89-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.85.09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.12 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.06A9.3 9.3 0 0 1 12 6.84c.85 0 1.7.12 2.49.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.77 0 3.98-2.34 4.85-4.57 5.11.36.32.68.95.68 1.92 0 1.39-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/cristiano-ronaldo-38022033b" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3A2.02 2.02 0 0 0 3.2 5.03 2 2 0 0 0 5.2 7.06h.03A2.02 2.02 0 0 0 7.3 5.03 2 2 0 0 0 5.28 3h-.03ZM21 13.24c0-3.37-1.8-4.94-4.2-4.94-1.94 0-2.8 1.08-3.28 1.84V8.5h-3.38c.04 1.08 0 12.5 0 12.5h3.38v-6.98c0-.37.03-.74.14-1 .3-.74.98-1.5 2.12-1.5 1.5 0 2.1 1.14 2.1 2.82V21H21v-7.76Z" />
+                    </svg>
+                </a>
+            </div>
         </nav>
     </header>
 
     <main class="main-content">
-        <section class="hero section">
+        <section class="hero hero-home section">
             <div class="hero-copy reveal">
-                <span class="eyebrow">Portfólio acadêmico + profissional</span>
-                <h1>Transformando estudos em soluções digitais com identidade, clareza e impacto.</h1>
+                <span class="eyebrow">Hello world</span>
+                <h1>Eu sou Cristiano,</h1>
+                <p class="hero-role">Desenvolvedor em formação com foco em web, dados e projetos reais.</p>
                 <p class="hero-lead">
                     Sou Cristiano Ronaldo Ferreira Bueno, estudante de Análise e Desenvolvimento de Sistemas na Fatec Jales.
-                    Este site agora apresenta minha trajetória de forma mais estratégica: competências, projetos, disciplinas e
-                    canais de contato reunidos em uma experiência mais moderna, confiante e fácil de navegar.
+                    Estou construindo uma base sólida em desenvolvimento, banco de dados e experiência digital,
+                    transformando aprendizado em projetos que comunicam evolução técnica de forma clara.
                 </p>
                 <div class="hero-actions">
-                    <a href="#projetos" class="btn">Ver projetos em destaque</a>
-                    <a href="contato.html" class="btn-secondary">Conversar comigo</a>
-                    <a href="disciplinas.html" class="btn-ghost">Explorar disciplinas</a>
+                    <a href="contato.html" class="btn">Fale comigo</a>
+                    <a href="assets/docs/Cristiano-Bueno-Curriculo.pdf" class="btn-secondary" download>Baixar currículo</a>
+                    <a href="#projetos" class="btn-ghost">Ver projetos</a>
                 </div>
             </div>
 
-            <aside class="hero-panel reveal delay-1">
-                <div class="profile-wrapper">
-                    <img src="assets/images/foto.jpg" alt="Foto de Cristiano Ronaldo Ferreira Bueno" class="profile-photo">
-                    <div class="profile-meta">
-                        <h2>Cristiano Ronaldo Ferreira Bueno</h2>
-                        <p>ADS • Fatec Jales</p>
-                        <p>Foco em desenvolvimento full stack, banco de dados e experiências web.</p>
+            <aside class="hero-visual reveal delay-1" aria-hidden="true">
+                <div class="hero-orb">
+                    <div class="hero-orb-inner">
+                        <img src="assets/images/foto.jpg" alt="" class="hero-portrait">
                     </div>
-                </div>
-
-                <div class="metric-grid">
-                    <div class="metric-card">
-                        <strong>11+</strong>
-                        <span>disciplinas aplicadas ao portfólio</span>
-                    </div>
-                    <div class="metric-card">
-                        <strong>3</strong>
-                        <span>projetos públicos em destaque</span>
-                    </div>
-                    <div class="metric-card">
-                        <strong>100%</strong>
-                        <span>site estático, rápido e responsivo</span>
-                    </div>
-                </div>
-
-                <div class="quick-actions">
-                    <a href="https://github.com/cristianorfb" target="_blank" rel="noreferrer" class="btn">GitHub</a>
-                    <a href="https://br.linkedin.com/in/cristiano-ronaldo-ferreira-bueno" target="_blank" rel="noreferrer"
-                        class="btn-ghost">LinkedIn</a>
+                    <span class="skill-chip skill-chip-1">HTML</span>
+                    <span class="skill-chip skill-chip-2">CSS</span>
+                    <span class="skill-chip skill-chip-3">C#</span>
+                    <span class="skill-chip skill-chip-4">SQL</span>
                 </div>
             </aside>
         </section>
 
-        <section class="section glass-card reveal delay-2">
-            <h2 class="section-title">O que este portfólio comunica melhor agora</h2>
-            <p class="section-subtitle">
-                A proposta deixou de ser apenas uma vitrine acadêmica e passou a funcionar como uma apresentação profissional,
-                destacando valor, contexto e direção de carreira.
-            </p>
-            <div class="highlights-grid">
+        <section class="section reveal delay-1">
+            <div class="metric-grid metric-grid-home">
+                <div class="metric-card">
+                    <strong>11+</strong>
+                    <span>disciplinas conectadas ao portfólio</span>
+                </div>
+                <div class="metric-card">
+                    <strong>3</strong>
+                    <span>projetos públicos em destaque</span>
+                </div>
+                <div class="metric-card">
+                    <strong>100%</strong>
+                    <span>site estático, leve e responsivo</span>
+                </div>
+                <div class="metric-card">
+                    <strong>ADS</strong>
+                    <span>trajetória construída na Fatec Jales</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resume-section reveal delay-2" id="curriculo">
+            <div class="resume-layout">
+                <article class="resume-summary-card">
+                    <span class="eyebrow">Currículo</span>
+                    <h2 class="section-title">Resumo profissional e materiais rápidos</h2>
+                    <p class="section-subtitle">
+                        Desenvolvedor Full Stack com experiência em desenvolvimento web, APIs REST e sistemas de gerenciamento.
+                        Atuo desenvolvendo aplicações, websites e soluções digitais focadas em performance, organização de processos
+                        e experiência do usuário.
+                    </p>
+                    <p class="resume-copy">
+                        Possuo experiência prática em projetos como o SIGO e participação no sistema de gerenciamento de despesas da
+                        Prefeitura de Jales (Civitas). Atualmente curso o último ano de Análise e Desenvolvimento de Sistemas pela FATEC-SP.
+                    </p>
+                    <div class="resume-actions">
+                        <a href="assets/docs/Cristiano-Bueno-Curriculo.pdf" class="btn" download>Baixar currículo em PDF</a>
+                        <a href="contato.html" class="btn-ghost">Entrar em contato</a>
+                    </div>
+                </article>
+
+                <div class="qr-grid">
+                    <article class="qr-card">
+                        <img src="assets/qrcodes/github.png" alt="QR code do GitHub de Cristiano Bueno" class="qr-image">
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/CristianoRFB" target="_blank" rel="noreferrer" class="resource-link">github.com/CristianoRFB</a>
+                    </article>
+                    <article class="qr-card">
+                        <img src="assets/qrcodes/linkedin.png" alt="QR code do LinkedIn de Cristiano Bueno" class="qr-image">
+                        <h3>LinkedIn</h3>
+                        <a href="https://linkedin.com/in/cristiano-ronaldo-38022033b" target="_blank" rel="noreferrer" class="resource-link">linkedin.com/in/cristiano-ronaldo-38022033b</a>
+                    </article>
+                    <article class="qr-card">
+                        <img src="assets/qrcodes/email.png" alt="QR code do e-mail de Cristiano Bueno" class="qr-image">
+                        <h3>E-mail</h3>
+                        <a href="mailto:cristiano.bueno01@fatec.sp.gov.br" class="resource-link">cristiano.bueno01@fatec.sp.gov.br</a>
+                    </article>
+                </div>
+            </div>
+
+            <div class="resume-panels">
                 <article class="info-card">
-                    <span class="tag">Posicionamento</span>
-                    <h3>Identidade mais forte</h3>
-                    <p>Uma abertura mais clara, com headline de impacto e navegação objetiva, ajuda recrutadores e parceiros a
-                        entenderem rapidamente quem você é e onde pode contribuir.</p>
+                    <span class="tag">Tecnologias</span>
+                    <h3>Stack atual</h3>
+                    <div class="tech-table">
+                        <div><strong>Front-end</strong><span>React, Next.js, Astro, TailwindCSS</span></div>
+                        <div><strong>Back-end</strong><span>Node.js, Express.js, ASP.NET Core, Laravel</span></div>
+                        <div><strong>Linguagens</strong><span>JavaScript, TypeScript, Python, C#</span></div>
+                        <div><strong>Banco de dados</strong><span>MongoDB, PostgreSQL, MySQL, SQL Server, Supabase</span></div>
+                        <div><strong>Ferramentas</strong><span>Git, GitHub, Swagger, API REST</span></div>
+                    </div>
                 </article>
                 <article class="info-card">
                     <span class="tag">Experiência</span>
-                    <h3>Layout mais premium</h3>
-                    <p>O novo visual usa contraste, profundidade e hierarquia visual para entregar uma aparência muito mais atual
-                        sem perder desempenho por ser um site estático.</p>
+                    <h3>Atuação profissional</h3>
+                    <ul class="list-clean compact-list">
+                        <li><strong>Desenvolvedor — 2025 até o momento</strong><br>Desenvolvimento de websites, aplicações web modernas, interfaces responsivas e integrações com APIs REST e bancos de dados.</li>
+                        <li><strong>Designer Gráfico — 2022 até o momento</strong><br>Criação de identidade visual, logotipos, layouts e materiais digitais com foco em web.</li>
+                    </ul>
                 </article>
                 <article class="info-card">
-                    <span class="tag">Clareza</span>
-                    <h3>Conteúdo orientado a resultado</h3>
-                    <p>Projetos, áreas de atuação e disciplinas passaram a reforçar competências práticas, não apenas listar itens.</p>
+                    <span class="tag">Projetos relevantes</span>
+                    <h3>Experiência aplicada</h3>
+                    <ul class="list-clean compact-list">
+                        <li><strong>SIGO</strong><br>Sistema de informatização e gerenciamento de oficinas com C#, ASP.NET Core, API REST, MySQL e Next.js.</li>
+                        <li><strong>Civitas</strong><br>Participação no sistema de gerenciamento de despesas da Prefeitura de Jales.</li>
+                        <li><strong>Portfólio profissional</strong><br>Site pessoal com foco em performance, design moderno e apresentação de projetos.</li>
+                    </ul>
+                </article>
+                <article class="info-card">
+                    <span class="tag">Formação</span>
+                    <h3>Base acadêmica e idiomas</h3>
+                    <ul class="list-clean compact-list">
+                        <li><strong>FATEC-SP</strong><br>Análise e Desenvolvimento de Sistemas — cursando último ano.</li>
+                        <li><strong>ETEC</strong><br>Técnico em Análise e Desenvolvimento de Sistemas — concluído em 2024.</li>
+                        <li><strong>Idiomas</strong><br>Português nativo e inglês avançado.</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -187,6 +259,25 @@
             </div>
         </section>
 
+        <section class="section reveal">
+            <h2 class="section-title">Recursos rápidos</h2>
+            <p class="section-subtitle">
+                Atalhos úteis para quem quer entender melhor meu momento atual, repertório técnico e canais de contato.
+            </p>
+            <div class="resource-grid">
+                <article class="resource-card">
+                    <h3>Base acadêmica organizada</h3>
+                    <p>Cada disciplina tem uma página própria com contexto, tópicos abordados e referências complementares.</p>
+                    <a href="disciplinas.html" class="resource-link">Abrir disciplinas</a>
+                </article>
+                <article class="resource-card">
+                    <h3>Contato direto</h3>
+                    <p>Disponibilizei canais para oportunidades, networking, projetos e conversas sobre tecnologia.</p>
+                    <a href="contato.html" class="resource-link">Ir para contato</a>
+                </article>
+            </div>
+        </section>
+
         <section class="cta-banner reveal">
             <div>
                 <h2>Quer ver a base acadêmica por trás de tudo isso?</h2>
@@ -199,6 +290,10 @@
     <footer class="footer">
         <p><strong>Cristiano Ronaldo Ferreira Bueno</strong> • Portfólio acadêmico e profissional • 2026</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
+
+
+
